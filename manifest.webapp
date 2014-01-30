@@ -1,0 +1,43 @@
+{
+  "version": "1",
+  "name": "SafePlay",
+  "type" : "privileged",
+  "launch_path": "/index.html",
+  "description": "O SafePlay dá recomendações para a prática de esportes baseado em medições locais de temperatura e umidade.",
+  "icons": {
+    "16": "/images/logo16.png",
+    "32": "/images/logo32.png",
+    "48": "/images/logo48.png",
+    "60": "/images/logo60.png",
+    "64": "/images/logo64.png",
+    "90": "/images/logo90.png",
+    "120": "/images/logo120.png",
+    "128": "/images/logo128.png"
+  },
+  "developer": {
+    "name": "Victor Morandini Stabile"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "pt_BR",
+  "permissions": {
+    "desktop-notification": {
+      "description": "Motrar notificações"
+    },
+    "geolocation": {
+      "description": "Detectar sua localização"
+    },
+    "systemXHR": {}
+  },
+  "locales": {
+    "en": {
+      "name": "SafePlay",
+      "description": "SafePlay gives recommendations on sport practice based on local temperature and humidity measurements."
+    },
+    "pt_BR": {
+      "name": "SafePlay",
+      "description": "O SafePlay dá recomendações para a prática de esportes baseado em medições locais de temperatura e umidade."
+    }
+  }
+}

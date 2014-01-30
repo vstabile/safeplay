@@ -1,0 +1,84 @@
+body {
+  background-color: #F8F8F8;
+}
+
+.dialog-progress {
+  text-align: center;
+}
+
+#app-heading {
+  padding-left: 40px;
+}
+
+#heading-logo {
+  height: 32px;
+  position: absolute;
+  margin-top: 8px;
+  margin-left: -40px;
+}
+
+#heat-index-container {
+  text-align: center;
+  background-color: #bceafa;
+  padding: 14px;
+  border-radius: 4px;
+  margin: 0;
+}
+
+.heat-index-value {
+  font-size: 34px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+#data-container {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.data-value {
+  font-size: 28px;
+  margin-top: 0px;
+}
+
+#recommendation-container {
+  margin-top: 18px;
+}
+
+.recommendation {
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+  font-size: 12px;
+}
+
+#white-zone {
+  background-color: #FFF;
+}
+
+#yellow-zone {
+  background-color: #FF6;
+}
+
+#orange-zone {
+  background-color: #FC6;
+}
+
+#red-zone {
+  background-color: #F66;
+}
+
+#black-zone {
+  color: #FFF;
+  background-color: #000;
+}
+
+.hidden {
+  display: none;
+}
+
+.display {
+  display: block;
+}

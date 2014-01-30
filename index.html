@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/headers.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/toolbars.css">
+    <link rel="stylesheet" type="text/css" href="css/confirm.css">
+    <link rel="stylesheet" type="text/css" href="css/progress_activity.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>SafePlay</title>
+        <!-- Localization -->
+    <link rel="resource" type="application/l10n" href="locales/locales.ini" />
+    <script type="application/javascript" src="js/l10n.js"></script>
+    <base target="_blank">
+</head>
+
+<body>
+
+    <section role="region">
+        <header>
+            <!-- Icon that will indicate whether you are online or offline - enabled if you are using offline/appcache (see above) -->
+            <menu type="toolbar">
+                <button id="install"><span class="icon icon-add">install</span></button>
+            </menu>
+            <h1 id="app-heading">
+                <img id="heading-logo" src="images/heading-logo.png" /> SafePlay
+            </h1>
+        </header>
+    </section>
+
+    <form role="dialog" data-type="confirm" id="loading-conditions">
+      <section>
+        <h1 data-l10n-id="loading-conditions">Carregando condições do ambientes...</h1>
+        <p class="dialog-progress"><progress></progress></p>
+      </section>
+    </form>
+
+    <div id="main">
+        <!-- Índice de Calor -->
+        <div id="heat-index-container">
+            <h2 data-l10n-id="heat-index">Índice de Calor</h2>
+            <p class="heat-index-value">
+                <span id="heat-index"></span>° C
+            </p>
+        </div>
+
+        <!-- Recomendação -->
+        <div id="recommendation-container">
+            <p class="recommendation" id="white-zone">
+                <strong data-l10n-id="white-zone">Zona Branca:</strong> <span data-l10n-id="white-zone-recommendation">Há muito pouco perigo devido ao calor, não é preciso tomar nenhuma precaução.</span>
+            </p>
+            <p class="recommendation" id="yellow-zone">
+                <strong data-l10n-id="yellow-zone">Zona Amarela:</strong> <span data-l10n-id="yellow-zone-recommendation">Mantenha os jogadores hidratados e não permita que pratiquem atividades esportivas por longos períodos, substituindo jogadores com frequência quando possível.</span>
+            </p>
+            <p class="recommendation" id="orange-zone">
+                <strong data-l10n-id="orange-zone">Zona Laranja:</strong> <span data-l10n-id="orange-zone-recommendation">Mantenha os jogadores hidratados e não permita que pratiquem atividades esportivas por longos períodos, substituindo jogadores com frequência quando possível. Forneça água gelada tanto para os jogadores quanto para a torcida e faça pausas no jogo com frequência.</span>
+            </p>
+            <p class="recommendation" id="red-zone">
+                <strong data-l10n-id="red-zone">Zona Vermelha:</strong> <span data-l10n-id="red-zone-recommendation">Mantenha os jogadores hidratados e não permita que pratiquem atividades esportivas por longos períodos, substituindo jogadores com frequência quando possível. Forneça água gelada tanto para os jogadores quanto para a torcida e faça pausas no jogo com frequência. Considere reduzir o tempo das partidas e treinos, podendo também cancelar a atividade.</span>
+            </p>
+            <p class="recommendation" id="black-zone">
+                <strong data-l10n-id="black-zone">Zona Negra:</strong> <span data-l10n-id="black-zone-recommendation">Cancele qualquer jogo ou treino até que o índice de calor retorne para menos de 46° C.</span>
+            </p>
+        </div>
+
+        <!-- Temperatura -->
+        <div id="data-container">
+            <h3 data-l10n-id="temperature">Temperatura</h2>
+            <p class="data-value">
+                <span id="temperature"></span>° C
+            </p>
+        </div>
+        <!-- Umidade -->
+        <div id="data-container">
+            <h3 data-l10n-id="humidity">Umidade</h2>
+            <p class="data-value">
+                <span id="humidity"></span>%
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div role="toolbar">
+            <ul>
+                <li><button id="reload" class="update" data-l10n-id="update-button">Atualizar</button></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/offline.js"></script>
+</body>
+</html>
